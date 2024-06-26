@@ -76,9 +76,79 @@
 }
 
 @media (min-width: 769px){
-    
-
+    .dropdown{
+        display: none;
+    }
 }
+
+@media (max-width: 425px){
+    #under_text{
+        font-size: 1.8vw !important;
+    }
+
+    
+}
+
+.dropbtn {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    
+    top: 0;
+
+    text-align: right;
+    
+    background-color: rgba(128, 128, 128, 0);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 1vw;
+    
+    border: none;
+
+    width: 100%;
+}
+
+.dropdown {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    position: fixed;
+    top: 0;
+
+    
+    width: 100%;
+    color:white;
+
+    z-index: 5;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(139, 139, 139, 0.5);
+    color: white;
+
+    font-family: small_letters;
+
+    
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+
+    width: 100%;
+}
+
+.dropdown-content a {
+    
+    
+    padding: 18px 29px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: rgba(255, 255, 255, 0.5);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/*.dropdown:hover .dropbtn {background-color: rgba(139, 139, 139, 0.3);}*/
 
 a:any-link{
     text-decoration: none;
@@ -328,7 +398,6 @@ main:focus{
     
     height: 40vw;
     position: absolute;
-    /*margin-left: 70%;*/
     border-radius: 10px;
 
     left: 80%;
@@ -376,7 +445,7 @@ main:focus{
 #holder_pic{
     background-image: url(images/joe.PNG);
     background-size: cover;
-    background-attachment: fixed;
+    background-position: center;
 }
 
 
@@ -482,7 +551,7 @@ main:focus{
     border-radius: 50px;
 
     
-    float: right;
+    float: left;
 }
 
 #button_back:hover{
