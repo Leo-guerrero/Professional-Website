@@ -79,6 +79,7 @@
     .dropdown{
         display: none;
     }
+
 }
 
 @media (max-width: 425px){
@@ -86,8 +87,20 @@
         font-size: 1.8vw !important;
     }
 
+    .holder{
+        width: 90% !important;
+    }
+    .holder2{
+        width: 90% !important;
+    }
+    #langu{
+        font-size: 4vw !important;
+    }
     
+
 }
+
+
 
 .dropbtn {
     position: -webkit-sticky; /* Safari */
@@ -99,6 +112,7 @@
     
     background-color: rgba(128, 128, 128, 0);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: white;
     padding: 1vw;
     
@@ -225,7 +239,7 @@ p{
 }
 
 #buttons_top{
-    
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
 
@@ -331,14 +345,21 @@ main:focus{
     border-color: white;
     border-width: 2px;
 
+    transition-duration: 0.4s;
     
+    scale: 1;
     backdrop-filter: blur(1px);
-    padding: 1% 2%;
+    padding: 1% ;
     background-color: rgba(0,0,0,0);
 }
 
+
+
 #view_scroll:hover{
+    padding: 2%;
+    scale: 1.1;
     cursor: pointer;
+    
 }
 
 
@@ -421,10 +442,12 @@ main:focus{
     color: white;
 }
 
+
+
 .containter_test{
     display: flex;
     justify-content: space-evenly;
-    
+    flex-wrap: wrap;
     padding-bottom: 5%;
     border-bottom: solid;
     border-bottom-width: 1px;
@@ -436,6 +459,9 @@ main:focus{
     font-family: small_letters;
     font-size: 3vw;
     width: 40%;
+
+    
+
     color: white;
     background-color: rgb(7, 7, 7);
     padding: 2%;
@@ -443,9 +469,7 @@ main:focus{
 }
 
 #holder_pic{
-    background-image: url(images/joe.PNG);
-    background-size: cover;
-    background-position: center;
+    border-radius: 10px;
 }
 
 
@@ -464,6 +488,7 @@ main:focus{
 
 .languages_container{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-evenly;
     
     padding-bottom: 40px;
@@ -549,12 +574,13 @@ main:focus{
     border: none;
     padding: 2%;
     border-radius: 50px;
-
+    transition-duration: 0.6s;
     
     float: left;
 }
 
 #button_back:hover{
+    background-color: rgb(31, 31, 31);
     cursor: pointer;
 }
 
@@ -593,9 +619,32 @@ main:focus{
 }
 
 .scrolling-content img {
-    width: 40vw; 
+    width: 80vw; 
     height: auto;
     margin-right: 10px; 
+}
+
+
+
+
+
+.scrolling-wrapper2 {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-content2 {
+    width: max-content;
+    display: flex;
+    animation: scroll 20s linear infinite;
+    animation-direction: reverse;
+}
+
+.scrolling-content2 p {
+    font-size: 5vw; 
+    height: auto;
+    margin-right: 7vw; 
 }
 
 @keyframes scroll {

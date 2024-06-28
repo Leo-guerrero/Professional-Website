@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="styleSheet" href="general_styles.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
     <title>Leo Guerrero's Website</title>
 </head>
 <body>
@@ -33,13 +34,12 @@
     <div>
     <h1 id="myname">Leo Guerrero</h1>
     <p id="under_text" >Undergraduate Software Engineer<br> Website created by me.</p>
-    <a href="#about_color"><button id="view_scroll">View</button></a>
+    <a href="#about_color"><button id="view_scroll"><i id="down_i" class="fas fa-chevron-down"></i></button></a>
     </div>
 
     <img class="fadeIn" id="freaky" src="images/front_page.png">
     
     
-
 
     <div class="title_head hidden">
         <p id="about_color">ABOUT</p>
@@ -50,8 +50,8 @@
         <div class="holder hidden">
             <p class="hidden">Currently seeking to enhance my technical expertise, broaden my knowledge base, and prepare for a successful career in the tech industry.<br><br> I created this webiste so I could test my skills using HTML, CSS, and JavaScript. this isn't the first website I have made but it certainly won't be the last.</p>
         </div>
-        <div class="holder hidden" id="holder_pic">
-        
+        <div class="holder hidden" >
+            <img id="holder_pic" class="hidden" style="width:100%;" src="images/joe.PNG">
         </div>
         
     </div>
@@ -63,7 +63,7 @@
 
     </div>
     
-    <div class="scrolling-wrapper">
+    <div class="scrolling-wrapper hidden">
         <div class="scrolling-content hidden">
         <img src="images/programming-languages.png">
         <img src="images/programming-languages.png">
