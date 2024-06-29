@@ -84,11 +84,13 @@
 
 @media (max-width: 425px){
     #under_text{
-        font-size: 1.8vw !important;
+        font-size: 2vw !important;
+        margin-top: 27% !important;
     }
 
     .holder{
         width: 90% !important;
+        font-size: 5vw !important;
     }
     .holder2{
         width: 90% !important;
@@ -96,7 +98,13 @@
     #langu{
         font-size: 4vw !important;
     }
-    
+
+    #myname{
+        font-size: 8.8vw !important;
+    }
+    #view_scroll{
+        display: none;
+    }
 
 }
 
