@@ -91,9 +91,16 @@
     .holder{
         width: 90% !important;
         font-size: 5vw !important;
+        margin-bottom: 10px;
     }
+
+    #holder_my_pic{
+        width: 95% !important;
+    }
+
     .holder2{
         width: 90% !important;
+        margin-bottom: 10px;
     }
     #langu{
         font-size: 4vw !important;
@@ -105,6 +112,49 @@
     #view_scroll{
         display: none;
     }
+
+    .projects_container{
+        flex-direction: column;
+    }
+
+    .holder3{
+        width: 95% !important;
+        font-size: 3vw !important;
+    }
+
+    #github_pro{
+
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px !important;
+    }
+
+    #github_text{
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 20px;
+    }
+
+    #permafrost{
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 20px;
+    }
+
+    #permafrost_text{
+        border-top-right-radius: 20px;
+        border-bottom-left-radius:0px !important;
+    }
+
+    #pub{
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px !important;
+    }
+
+    #pub_text{
+        
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 20px;
+    }
+
+
 
 }
 
@@ -282,13 +332,14 @@ p{
 
 .main:after{
     content: '';
+    background-color: white;
     position: absolute;
     width: 100%;
     transform: scaleX(0);
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color: white;
+    
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -349,8 +400,8 @@ main:focus{
     font-family: small_letters;
     color: white;
     text-decoration: none;
-    border: solid;
     border-color: white;
+    border: solid;
     border-width: 2px;
 
     transition-duration: 0.4s;
@@ -375,7 +426,7 @@ main:focus{
     position: relative;
     display: block;
     width: 100%;
-    filter: brightness(50%);
+    filter: brightness(80%);
     
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -471,13 +522,18 @@ main:focus{
     
 
     color: white;
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(17, 17, 17);
     padding: 2%;
     border-radius: 20px;
 }
 
+#holder_my_pic{
+    width: 40%;
+}
+
 #holder_pic{
     border-radius: 10px;
+    
 }
 
 
@@ -503,7 +559,7 @@ main:focus{
 }
 
 .holder2{
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(17, 17, 17);
     padding: 10px;
     border-radius: 20px;
     width: 40%;
@@ -519,8 +575,9 @@ main:focus{
 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-size: cover;
     background-image: url(images/github.jpg);
+    background-size: cover;
+    
 }
 
 #github_text{
@@ -541,7 +598,8 @@ main:focus{
 
     border: solid;
     border-width: 1px;
-    color: rgb(7, 7, 7);
+    border-color: rgb(17, 17, 17);
+    background-color: rgb(17, 17, 17);
 }
 
 #pub_text{
@@ -558,7 +616,7 @@ main:focus{
 
 .holder3{
     width: 50%;
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(17, 17, 17);
     padding: 10px;
     
     font-size: 2vw;
