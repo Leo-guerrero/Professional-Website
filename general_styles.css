@@ -73,6 +73,17 @@
         display: none;
     }
 
+    #myname{
+        font-size: 15vw !important;
+    }
+    #under_text{
+        font-size: 3.2vw !important;
+        margin-top: 24% !important;
+    }
+    #view_scroll{
+        margin-top: 35% !important;
+    }
+
 }
 
 @media (min-width: 769px){
@@ -83,9 +94,8 @@
 }
 
 @media (max-width: 425px){
-    #under_text{
-        font-size: 2vw !important;
-        margin-top: 27% !important;
+    #freaky{
+        height: 100vh;
     }
 
     .holder{
@@ -104,13 +114,6 @@
     }
     #langu{
         font-size: 4vw !important;
-    }
-
-    #myname{
-        font-size: 8.8vw !important;
-    }
-    #view_scroll{
-        display: none;
     }
 
     .projects_container{
@@ -289,6 +292,10 @@ html, body{
     scroll-behavior: smooth;
     overflow-x: hidden;
     
+    background-image: url(images/front_page.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 p{
@@ -367,13 +374,13 @@ main:focus{
     font-family: small_letters;
     font-weight: normal;
 
-    margin-top: 15%;
+    text-wrap: nowrap;
 
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
 
-    
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
 }
 
 #under_text{
@@ -383,19 +390,20 @@ main:focus{
     font-size: 0.8vw;
     color: #ffffff;
 
-    margin-top: 22%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    margin-top: 8%;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 
 #view_scroll{
     z-index: 1;
     position: absolute;
-    margin-top: 27%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+
+    margin-top: 13%;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
 
     font-family: small_letters;
     color: white;
@@ -434,6 +442,16 @@ main:focus{
     border-bottom-width: 1px;
     border-color: white;
     overflow-y: hidden;
+    opacity: 0;
+
+
+    height: 100vh;
+}
+
+#blur_back{
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
 }
 
 #black{
@@ -478,7 +496,7 @@ main:focus{
     
     height: 40vw;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 20px;
 
     left: 80%;
     -webkit-transform: translateX(-50%);
@@ -522,7 +540,7 @@ main:focus{
     
 
     color: white;
-    background-color: rgb(17, 17, 17);
+    background-color: rgba(17, 17, 17, 0.7);
     padding: 2%;
     border-radius: 20px;
 }
@@ -532,7 +550,7 @@ main:focus{
 }
 
 #holder_pic{
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 
@@ -559,7 +577,7 @@ main:focus{
 }
 
 .holder2{
-    background-color: rgb(17, 17, 17);
+    background-color: rgba(17, 17, 17, 0.7);
     padding: 10px;
     border-radius: 20px;
     width: 40%;
@@ -596,10 +614,7 @@ main:focus{
     background-image: url(images/permafrost.PNG);
     background-size: cover;
 
-    border: solid;
-    border-width: 1px;
-    border-color: rgb(17, 17, 17);
-    background-color: rgb(17, 17, 17);
+    background-color: rgba(17, 17, 17, 0.7);
 }
 
 #pub_text{
@@ -616,7 +631,7 @@ main:focus{
 
 .holder3{
     width: 50%;
-    background-color: rgb(17, 17, 17);
+    background-color: rgba(17, 17, 17, 0.7);
     padding: 10px;
     
     font-size: 2vw;
