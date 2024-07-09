@@ -98,10 +98,6 @@
         height: 100vh;
     }
 
-    body{
-        background-attachment: scroll;
-    }
-
     .holder{
         width: 90% !important;
         font-size: 5vw !important;
@@ -165,7 +161,17 @@
 
 }
 
-
+.background_test {
+    background-image: url('images/front_page.png');
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
 
 .dropbtn {
     position: -webkit-sticky; /* Safari */
@@ -297,7 +303,9 @@ html, body{
 }
 
 body{
+    
     background-color: black;
+    /*
     background-image: url(images/front_page.png);
     background-size: cover;
     -o-background-size: cover;
@@ -305,7 +313,7 @@ body{
     -webkit-background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 }
 
 
