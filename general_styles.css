@@ -295,6 +295,9 @@ html, body{
 body{
     background-image: url(images/front_page.png);
     background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -376,7 +379,7 @@ main:focus{
     font-family: small_letters;
     font-weight: normal;
 
-    text-wrap: nowrap;
+    white-space: nowrap;
 
 
     top: 30%; 
@@ -438,9 +441,9 @@ main:focus{
     width: 100%;
     
     overflow-y: hidden;
-    opacity: 0;
+    
 
-
+    visibility: hidden;
     height: 100vh;
 }
 
