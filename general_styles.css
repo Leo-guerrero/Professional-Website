@@ -73,6 +73,12 @@
         display: none;
     }
 
+    #blur_back{
+        
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+    }
+
     #myname{
         font-size: 15vw !important;
     }
@@ -105,7 +111,7 @@
 
     .holder{
         width: 90% !important;
-        font-size: 5vw !important;
+        font-size: 6vw !important;
         margin-bottom: 10px;
     }
 
@@ -310,15 +316,7 @@ html, body{
 body{
     
     background-color: black;
-    /*
-    background-image: url(images/front_page.png);
-    background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;*/
+    
 }
 
 
@@ -554,14 +552,14 @@ main:focus{
 
 .holder{
     font-family: small_letters;
-    font-size: 3vw;
+    font-size: 3.2vw;
     width: 40%;
 
     
 
     color: white;
-    background-color: rgba(17, 17, 17, 0.7);
-    padding: 2%;
+    
+    
     border-radius: 20px;
 }
 
@@ -597,7 +595,7 @@ main:focus{
 }
 
 .holder2{
-    background-color: rgba(17, 17, 17, 0.7);
+    background-color: rgba(17, 17, 17, 0.5);
     padding: 10px;
     border-radius: 20px;
     width: 40%;
@@ -651,7 +649,7 @@ main:focus{
 
 .holder3{
     width: 50%;
-    background-color: rgba(17, 17, 17, 0.7);
+    background-color: rgba(17, 17, 17, 0.5);
     padding: 10px;
     
     font-size: 2vw;
@@ -662,7 +660,7 @@ main:focus{
 
 .holder3:hover{
     cursor: pointer;
-    background-color: rgb(88, 88, 88);
+    background-color: rgb(88, 88, 88, 0.5);
 }
 
 #back_up{
