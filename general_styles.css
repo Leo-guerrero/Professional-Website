@@ -171,6 +171,12 @@
 
 }
 
+#mode{
+    position: absolute;
+    margin-left: 90%;
+    margin-top: 7%;
+}
+
 .background_test {
     background-image: url('images/front_page.png');
     height: 100%;
@@ -657,9 +663,16 @@ main:focus{
     
 }
 
-.holder3:hover{
-    cursor: pointer;
-    background-color: rgb(88, 88, 88, 0.5);
+#github_text:hover{
+    background-color: rgba(32, 255, 99, 0.5);
+}
+
+#permafrost_text:hover{
+    background-color: rgba(0, 247, 255, 0.5);
+}
+
+#pub_text:hover{
+    background-color: rgba(0, 58, 134, 0.5);
 }
 
 #back_up{
@@ -668,17 +681,19 @@ main:focus{
 
 #button_back{
     text-decoration: none;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(31, 31, 31);
     border: none;
     padding: 2%;
     border-radius: 50px;
     transition-duration: 0.6s;
+    position: absolute;
     
-    float: left;
+    left: 45.5%;
+    transform: translate(50%);
 }
 
 #button_back:hover{
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(75, 75, 75);
     cursor: pointer;
 }
 
