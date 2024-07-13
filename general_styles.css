@@ -77,6 +77,10 @@
         display: none;
     }
 
+    .projects_container:hover{
+        cursor: pointer;
+    }
+
     #blur_back{
         
         border-top-left-radius: 10px !important;
@@ -92,6 +96,11 @@
     }
     #view_scroll{
         margin-top: 35% !important;
+        cursor: pointer;
+    }
+
+    #button_back:hover{
+        cursor: pointer;
     }
 
 }
@@ -455,9 +464,7 @@ main:focus{
 
 #view_scroll:hover{
     padding: 2%;
-    scale: 1.1;
-    cursor:none;
-    
+    scale: 1.1; 
 }
 
 
@@ -698,7 +705,6 @@ main:focus{
 
 #button_back:hover{
     background-color: rgb(75, 75, 75);
-    cursor:none;
 }
 
 .hidden{
@@ -775,7 +781,7 @@ main:focus{
 
 
 #move{
-    background-color: rgba(255,255,255, 0.2);
+    background-color: rgba(255,255,255, 0);
     backdrop-filter: invert(1);
     transition-duration: 0.6s;
     z-index: 20;
@@ -795,6 +801,25 @@ main:focus{
     text-align: center;
 }
 
-.projects_container:hover{
-    cursor:none;
+.round_radious{
+    background-color: rgb(255, 255, 255);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 9999px;
+    font-size: 60%;
+    color: black;
+}
+
+@media (min-width: 769px){
+    .projects_container:hover{
+        cursor:none;
+    }
+
+    #view_scroll:hover{
+        cursor:none;
+    }
+
+    #button_back:hover{
+        cursor: none;
+    }
 }

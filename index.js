@@ -59,7 +59,8 @@ console.log(currentDate);
 const background_picture = document.getElementById("main_backgroundID");
 background_picture.style.backgroundImage = "url('images/christmas_background.jpg')";
 */
-var div = document.getElementById('github_text');
+
+var div = document.getElementById('git_container');
 div.onmouseover = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "1.8%";
@@ -68,6 +69,35 @@ div.onmouseover = function() {
 
 
 div.onmouseleave = function() {
+  const move2 = document.getElementById("move");
+  move2.style.padding = "0.5%";
+  document.getElementById("move").innerHTML = "";
+}
+
+var divperma = document.getElementById('permafrost_container');
+divperma.onmouseover = function() {
+  const move2 = document.getElementById("move");
+  move2.style.padding = "1.8%";
+  document.getElementById("move").innerHTML = "view";
+}
+
+
+divperma.onmouseleave = function() {
+  const move2 = document.getElementById("move");
+  move2.style.padding = "0.5%";
+  document.getElementById("move").innerHTML = "";
+}
+
+
+var divPUB = document.getElementById('BPUB_container');
+divPUB.onmouseover = function() {
+  const move2 = document.getElementById("move");
+  move2.style.padding = "1.8%";
+  document.getElementById("move").innerHTML = "view";
+}
+
+
+divPUB.onmouseleave = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "0.5%";
   document.getElementById("move").innerHTML = "";
