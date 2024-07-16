@@ -60,12 +60,12 @@ section img:hover{
 @media (max-width: 768px){
 
     #one{
-        margin-left: 90% !important;
+        margin-left: 90%;
         margin-top: 8%;
     }
     
     #two{
-        margin-top: 70% !important;
+        margin-top: 70%;
         
     }
     
@@ -83,7 +83,7 @@ section img:hover{
     }
     
     #six{
-        margin-top:60% !important;
+        margin-top:60% ;
     }
     
     #seven{
@@ -92,31 +92,36 @@ section img:hover{
 }
 
 @media (max-width: 425px){
+
+    section img{
+        height: 24vh;
+    }
+
     #one{
         display: none;
     }
     
     #two{
-        margin-top: 140% !important;
+        margin-top: 150% !important;
         
     }
     
     #three{
-        margin-left: -28% !important;
-        margin-top: -20% !important;
+        margin-left: -12%;
+        margin-top: 10%;
     }
     
     #four{
-        margin-top: -20% !important;
+        margin-top: 4%;
     }
     
     #five{
-        margin-left: 70%;
-        margin-top: 65%;
+        margin-left: 60%;
+        margin-top: 80%;
     }
     
     #six{
-        margin-top:98% !important;
-        margin-left: -20% !important;
+        margin-top:130% !important;
+        margin-left: 15%;
     }
 }
