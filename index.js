@@ -60,6 +60,20 @@ const background_picture = document.getElementById("main_backgroundID");
 background_picture.style.backgroundImage = "url('images/christmas_background.jpg')";
 */
 
+var divmypic = document.getElementById('myname');
+divmypic.onmouseover = function() {
+  const move2 = document.getElementById("move");
+  move2.style.backgroundImage = "url('images/joe.PNG')";
+  move2.style.padding = "8%";
+}
+
+
+divmypic.onmouseleave = function() {
+  const move2 = document.getElementById("move");
+  move2.style.padding = "0.5%";
+  move2.style.backgroundImage = "url('')";
+}
+
 var div = document.getElementById('git_container');
 div.onmouseover = function() {
   const move2 = document.getElementById("move");

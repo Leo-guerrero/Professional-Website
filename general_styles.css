@@ -89,13 +89,14 @@
 
     #myname{
         font-size: 15vw !important;
+        
     }
     #under_text{
         font-size: 3.2vw !important;
         margin-top: 24% !important;
     }
     #view_scroll{
-        margin-top: 35% !important;
+        margin-top: 40% !important;
         cursor: pointer;
     }
 
@@ -448,14 +449,12 @@ main:focus{
     font-family: small_letters;
     color: white;
     text-decoration: none;
-    border-color: white;
-    border: solid;
-    border-width: 2px;
+    border: none;
 
     transition-duration: 0.4s;
     
     scale: 1;
-    backdrop-filter: blur(1px);
+    
     padding: 1% ;
     background-color: rgba(0,0,0,0);
 }
@@ -568,10 +567,10 @@ main:focus{
 
 .holder{
     font-family: small_letters;
-    font-size: 3.2vw;
-    width: 40%;
+    font-size: 2.5vw;
+    width: 80%;
 
-    
+    text-align: center;
 
     color: white;
     
@@ -799,6 +798,9 @@ main:focus{
     font-family: small_letters;
     padding: 0.5%;
     text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .round_radious{
@@ -822,4 +824,13 @@ main:focus{
     #button_back:hover{
         cursor: none;
     }
+
+    #myname:hover{
+        cursor:none;
+    }
+
+    #holder_my_pic{
+        display: none;
+    }
+
 }
