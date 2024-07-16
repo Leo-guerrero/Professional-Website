@@ -60,6 +60,19 @@ const background_picture = document.getElementById("main_backgroundID");
 background_picture.style.backgroundImage = "url('images/christmas_background.jpg')";
 */
 
+document.addEventListener("mousemove", parallax);
+function parallax(e){
+  this.querySelectorAll('.layer').forEach(layer => {
+    const speed = layer.getAttribute('data-speed')
+
+    const x = (window.innerWidth - e.pageX*speed)/50
+    const y = (window.innerHeight - e.pageY*speed)/50
+
+    layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+  })
+}
+
+
 var divmypic = document.getElementById('myname');
 divmypic.onmouseover = function() {
   const move2 = document.getElementById("move");
@@ -123,7 +136,7 @@ var div2 = document.getElementById('view_scroll');
 div2.onmouseover = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "1.8%";
-  move2.style.color = "white";
+  move2.style.color = "black";
   document.getElementById("move").innerHTML = "Lets go!";
 }
 
