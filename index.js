@@ -60,8 +60,10 @@ const background_picture = document.getElementById("main_backgroundID");
 background_picture.style.backgroundImage = "url('images/christmas_background.jpg')";
 */
 
-document.addEventListener("mousemove", parallax);
-function parallax(e){
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+if (mediaQuery.matches) {
+  document.addEventListener("mousemove", parallax);
+  function parallax(e){
   this.querySelectorAll('.layer').forEach(layer => {
     const speed = layer.getAttribute('data-speed')
 
@@ -70,7 +72,12 @@ function parallax(e){
 
     layer.style.transform = `translateX(${x}px) translateY(${y}px)`
   })
+  }
+  
 }
+
+
+
 
 
 var divmypic = document.getElementById('myname');
