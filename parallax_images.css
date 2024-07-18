@@ -7,7 +7,7 @@ canvas{
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 840px){
     canvas{
         margin-left: 20%;
     }

@@ -60,7 +60,7 @@ const background_picture = document.getElementById("main_backgroundID");
 background_picture.style.backgroundImage = "url('images/christmas_background.jpg')";
 */
 
-const mediaQuery = window.matchMedia('(min-width: 768px)')
+const mediaQuery = window.matchMedia('(min-width: 840px)')
 if (mediaQuery.matches) {
   document.addEventListener("mousemove", parallax);
   function parallax(e){
