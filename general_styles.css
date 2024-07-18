@@ -480,7 +480,7 @@ main:focus{
 }
 
 #blur_back{
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-top-left-radius: 30px;
