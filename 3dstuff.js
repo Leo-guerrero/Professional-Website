@@ -24,8 +24,6 @@ const sphere = new THREE.Mesh( geometry, material ); scene.add( sphere );
 renderer.shadowMap.enabled = false;
 
 
-
-
 function animate() {
 	requestAnimationFrame( animate );
 	sphere.rotation.x += 0.001;
@@ -37,5 +35,11 @@ function animate() {
 
 animate();
 
+window.addEventListener('resize', onWindowResize, false);
+onWindowResize = () => {
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
+	renderer.setSize(window.innerWidth, window.innerHeight);
+};
 
 
