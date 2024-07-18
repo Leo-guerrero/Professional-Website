@@ -14,16 +14,16 @@ camera.position.setZ(30);
 renderer.render( scene, camera);
 
 const geometry = new THREE.IcosahedronGeometry( 18, 1);  
-const material = new THREE.MeshStandardMaterial( { color: 0xffffff, wireframe: true } ); 
+const material = new THREE.MeshBasicMaterial( { color: 0xffffff, wireframe: true } ); 
 const sphere = new THREE.Mesh( geometry, material ); scene.add( sphere );
 
+//---------------------
 
-const pointLight = new THREE.PointLight(0xffffff)
-pointLight.position.set(20,20,20)
+//---------------------
 
-const ambientLight = new THREE.AmbientLight(0xffffff);
+renderer.shadowMap.enabled = false;
 
-scene.add(pointLight, ambientLight)
+
 
 
 function animate() {
@@ -37,9 +37,5 @@ function animate() {
 
 animate();
 
-window.addEventListener('resize', () => {
-	camera.aspect = window.innerWidth / window.innerHeight;
-	camera.updateProjectionMatrix();
-	renderer.setSize(window.innerWidth, window.innerHeight);
-});
+
 
