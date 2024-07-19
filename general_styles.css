@@ -133,7 +133,7 @@
 
     .holder2{
         width: 90% !important;
-        margin-bottom: 10px;
+        margin-bottom: 6%;
     }
     #langu{
         font-size: 4vw !important;
@@ -625,6 +625,7 @@ main:focus{
     display: flex;
     justify-content:space-evenly;
     padding: 20px;
+    margin-top: 5%;
 }
 
 #github_pro{
@@ -634,16 +635,30 @@ main:focus{
     background-image: url(images/github.jpg);
     background-size: cover;
     
+    box-shadow: rgba(96, 255, 162, 0.8) 0 0 70px 22px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgba(54, 255, 151, 0.756);
 }
 
 #github_text{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    
+    box-shadow: rgba(96, 255, 162, 0.8) 0 0 70px 22px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgba(54, 255, 151, 0.756);
 }
 
 #permafrost_text{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+
+    box-shadow: rgba(97, 242, 255, 0.8) 0 0 70px 22px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgba(156, 255, 255, 0.756);
 }
 
 #permafrost{
@@ -653,11 +668,21 @@ main:focus{
     background-size: cover;
 
     background-color: rgba(17, 17, 17, 0.7);
+
+    box-shadow: rgba(97, 242, 255, 0.8) 0 0 70px 22px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgba(156, 255, 255, 0.756);
 }
 
 #pub_text{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+
+    box-shadow: rgba(59, 66, 204, 0.8) 0 0 70px 22px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgba(81, 90, 194, 0.756);
 }
 
 #pub{
@@ -665,6 +690,11 @@ main:focus{
     border-bottom-left-radius: 20px;
     background-size: cover;
     background-image: url(images/pub.jpg);
+
+    box-shadow: rgba(59, 66, 204, 0.8) 0 0 70px 22px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgba(81, 90, 194, 0.756);
 }
 
 .holder3{
@@ -675,7 +705,7 @@ main:focus{
     font-size: 2vw;
     height: 20vw;
     transition-duration: 0.4s;
-    
+
 }
 
 #github_text:hover{
