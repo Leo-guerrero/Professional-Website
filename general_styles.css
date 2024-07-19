@@ -153,32 +153,38 @@
 
         border-top-right-radius: 20px;
         border-bottom-left-radius: 0px !important;
+        border-bottom: none !important;
     }
 
     #github_text{
         border-top-right-radius: 0px !important;
         border-bottom-left-radius: 20px;
+        border-top: none !important;
     }
 
     #permafrost{
         border-top-right-radius: 0px !important;
         border-bottom-left-radius: 20px;
+        border-top: none !important;
     }
 
     #permafrost_text{
         border-top-right-radius: 20px;
         border-bottom-left-radius:0px !important;
+        border-bottom: none !important;
     }
 
     #pub{
         border-top-right-radius: 20px;
         border-bottom-left-radius: 0px !important;
+        border-bottom: none !important;
     }
 
     #pub_text{
         
         border-top-right-radius: 0px !important;
         border-bottom-left-radius: 20px;
+        border-top: none !important;
     }
 
 
@@ -614,7 +620,7 @@ main:focus{
     padding: 10px;
     border-radius: 20px;
     width: 40%;
-    box-shadow: rgba(176, 214, 255, 0.8) 0 0 70px 22px;
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 50px 22px;
     border: solid;
     border-width: 2px;
     border-color: rgba(189, 236, 255, 0.756);
@@ -635,30 +641,28 @@ main:focus{
     background-image: url(images/github.jpg);
     background-size: cover;
     
-    box-shadow: rgba(96, 255, 162, 0.8) 0 0 40px 8px;
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 50px 22px;
     border: solid;
     border-width: 2px;
-    border-color: rgba(54, 255, 151, 0.756);
+    border-color: rgba(189, 236, 255, 0.756);
 }
 
 #github_text{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     
-    box-shadow: rgba(96, 255, 162, 0.8) 0 0 40px 8px;
     border: solid;
     border-width: 2px;
-    border-color: rgba(54, 255, 151, 0.756);
+    border-color: rgba(189, 236, 255, 0.756);
 }
 
 #permafrost_text{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 
-    box-shadow: rgba(97, 242, 255, 0.8) 0 0 40px 8px;
     border: solid;
     border-width: 2px;
-    border-color: rgba(156, 255, 255, 0.756);
+    border-color: rgba(189, 236, 255, 0.756);
 }
 
 #permafrost{
@@ -669,20 +673,21 @@ main:focus{
 
     background-color: rgba(17, 17, 17, 0.7);
 
-    box-shadow: rgba(97, 242, 255, 0.8) 0 0 40px 8px;
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 50px 22px;
     border: solid;
     border-width: 2px;
-    border-color: rgba(156, 255, 255, 0.756);
+    border-color: rgba(189, 236, 255, 0.756);
 }
 
 #pub_text{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 
-    box-shadow: rgba(59, 66, 204, 0.8) 0 0 40px 8px;
     border: solid;
     border-width: 2px;
-    border-color: rgba(81, 90, 194, 0.756);
+    border-color: rgba(189, 236, 255, 0.756);
+
+    
 }
 
 #pub{
@@ -691,10 +696,12 @@ main:focus{
     background-size: cover;
     background-image: url(images/pub.jpg);
 
-    box-shadow: rgba(59, 66, 204, 0.8) 0 0 40px 8px;
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 50px 22px;
     border: solid;
     border-width: 2px;
-    border-color: rgba(81, 90, 194, 0.756);
+    border-color: rgba(189, 236, 255, 0.756);
+
+    
 }
 
 .holder3{
@@ -708,17 +715,11 @@ main:focus{
 
 }
 
-#github_text:hover{
-    background-color: rgba(32, 255, 99, 0.5);
+.holder3:hover{
+    background-color: rgba(189, 236, 255, 0.756);
 }
 
-#permafrost_text:hover{
-    background-color: rgba(0, 247, 255, 0.5);
-}
 
-#pub_text:hover{
-    background-color: rgba(0, 58, 134, 0.5);
-}
 
 #back_up{
     color: white;
