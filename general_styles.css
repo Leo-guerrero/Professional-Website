@@ -178,6 +178,7 @@
         border-top-right-radius: 20px;
         border-bottom-left-radius: 0px !important;
         border-bottom: none !important;
+
     }
 
     #pub_text{
@@ -620,7 +621,7 @@ main:focus{
     padding: 10px;
     border-radius: 20px;
     width: 40%;
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 50px 22px;
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
     border: solid;
     border-width: 2px;
     border-color: rgba(189, 236, 255, 0.756);
@@ -641,7 +642,7 @@ main:focus{
     background-image: url(images/github.jpg);
     background-size: cover;
     
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 50px 22px;
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
     border: solid;
     border-width: 2px;
     border-color: rgba(189, 236, 255, 0.756);
@@ -654,6 +655,8 @@ main:focus{
     border: solid;
     border-width: 2px;
     border-color: rgba(189, 236, 255, 0.756);
+
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
 }
 
 #permafrost_text{
@@ -663,6 +666,8 @@ main:focus{
     border: solid;
     border-width: 2px;
     border-color: rgba(189, 236, 255, 0.756);
+
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
 }
 
 #permafrost{
@@ -673,7 +678,7 @@ main:focus{
 
     background-color: rgba(17, 17, 17, 0.7);
 
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 50px 22px;
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
     border: solid;
     border-width: 2px;
     border-color: rgba(189, 236, 255, 0.756);
@@ -687,7 +692,7 @@ main:focus{
     border-width: 2px;
     border-color: rgba(189, 236, 255, 0.756);
 
-    
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
 }
 
 #pub{
@@ -696,7 +701,7 @@ main:focus{
     background-size: cover;
     background-image: url(images/pub.jpg);
 
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 50px 22px;
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
     border: solid;
     border-width: 2px;
     border-color: rgba(189, 236, 255, 0.756);
