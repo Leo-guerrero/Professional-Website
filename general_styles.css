@@ -614,7 +614,12 @@ main:focus{
     padding: 10px;
     border-radius: 20px;
     width: 40%;
+    box-shadow: rgba(176, 214, 255, 0.8) 0 0 70px 22px;
+    border: solid;
+    border-width: 2px;
+    border-color: rgba(189, 236, 255, 0.756);
 }
+
 
 .projects_container{
     display: flex;
