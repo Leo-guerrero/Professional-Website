@@ -18,7 +18,22 @@ const material = new THREE.MeshBasicMaterial( { color: 0xffffff, wireframe: true
 const sphere = new THREE.Mesh( geometry, material ); scene.add( sphere );
 
 //---------------------
+const geometry2 = new THREE.OctahedronGeometry( 14, 0 );
+const material2 = new THREE.MeshBasicMaterial( { color: 0xffffff, wireframe: true } ); 
+const sphere2 = new THREE.Mesh( geometry2, material2 ); scene.add( sphere2 );
 
+sphere2.position.x = -72;
+sphere2.position.z = -40;
+sphere2.position.y = -20;
+
+//------------------------
+const geometry3 = new THREE.TetrahedronGeometry( 5, 0 );
+const material3 = new THREE.MeshBasicMaterial( { color: 0xffffff, wireframe: true } ); 
+const sphere3 = new THREE.Mesh( geometry3, material3 ); scene.add( sphere3 );
+
+sphere3.position.x = 22;
+sphere3.position.z = 10;
+sphere3.position.y = 5;
 //---------------------
 
 renderer.shadowMap.enabled = false;
@@ -29,8 +44,15 @@ function animate() {
 	sphere.rotation.x += 0.001;
 	sphere.rotation.y += 0.001;
 	sphere.rotation.z += 0.003;
-	renderer.render( scene, camera );
 
+	sphere2.rotation.x += 0.001;
+	sphere2.rotation.y += 0.001;
+	sphere2.rotation.z += 0.008;
+
+	sphere3.rotation.x += 0.008;
+	sphere3.rotation.y += 0.001;
+	sphere3.rotation.z += 0.005;
+	renderer.render( scene, camera );
 }
 
 animate();

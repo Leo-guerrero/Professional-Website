@@ -1,17 +1,12 @@
-
-
 canvas{
     position: fixed;
     z-index: -5;
-    
+    left: 0;
+    top: 0;
 }
 
 
-@media (min-width: 840px){
-    canvas{
-        margin-left: 20%;
-    }
-}
+
 
 /*
 @media (max-width: 768px){
@@ -36,5 +31,6 @@ canvas{
 #chungus{
     margin-left: -40%;
 }
+
 
 
