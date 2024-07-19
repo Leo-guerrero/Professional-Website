@@ -219,8 +219,8 @@
     text-align: right;
     
     background-color: rgba(128, 128, 128, 0);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     color: white;
     padding: 1vw;
     
@@ -352,8 +352,8 @@ p{
 }
 
 #buttons_top{
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 }
 
 .header_buttons{
@@ -570,6 +570,7 @@ main:focus{
     border-bottom-width: 1px;
     border-color: white;
     border-radius: 50px;
+    
 }
 
 .holder{
@@ -606,6 +607,8 @@ main:focus{
     border-bottom-width: 1px;
     border-color: white;
     border-radius: 50px;
+
+    
 }
 
 .languages_container{
@@ -668,6 +671,7 @@ main:focus{
     border-color: rgba(189, 236, 255, 0.756);
 
     box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
+    
 }
 
 #permafrost{
@@ -676,12 +680,12 @@ main:focus{
     background-image: url(images/permafrost.PNG);
     background-size: cover;
 
-    background-color: rgba(17, 17, 17, 0.7);
-
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
     border: solid;
     border-width: 2px;
     border-color: rgba(189, 236, 255, 0.756);
+
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
+
 }
 
 #pub_text{
@@ -705,8 +709,6 @@ main:focus{
     border: solid;
     border-width: 2px;
     border-color: rgba(189, 236, 255, 0.756);
-
-    
 }
 
 .holder3{
@@ -845,12 +847,15 @@ main:focus{
 }
 
 .round_radious{
-    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(176, 214, 255, 0.4) 0 0 5px 2px;
+    border-color: rgba(189, 236, 255, 0.756);
+    border-width: 2px;
+    border-style: solid;
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 9999px;
-    font-size: 60%;
-    color: black;
+    font-size: 50%;
+    
 }
 
 @media (min-width: 769px){
@@ -872,6 +877,30 @@ main:focus{
 
     #holder_my_pic{
         display: none;
+    }
+
+    #github_pro{
+        border-right: none;
+    }
+
+    #github_text{
+        border-left: none;
+    }
+
+    #permafrost{
+        border-left: none;
+    }
+
+    #permafrost_text{
+        border-right: none;
+    }
+
+    #pub_text{
+        border-left: none;
+    }
+
+    #pub{
+        border-right: none;
     }
 
 }
