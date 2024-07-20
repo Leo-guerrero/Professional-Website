@@ -11,8 +11,6 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if(entry.isIntersecting){
@@ -52,13 +50,6 @@ document.body.onpointermove = event => {
 
 }
 
-/*
-const currentDate = new Date();
-console.log(currentDate);
-
-const background_picture = document.getElementById("main_backgroundID");
-background_picture.style.backgroundImage = "url('images/christmas_background.jpg')";
-*/
 
 const mediaQuery = window.matchMedia('(min-width: 840px)')
 if (mediaQuery.matches) {
@@ -75,8 +66,6 @@ if (mediaQuery.matches) {
   }
   
 }
-
-
 
 
 
@@ -100,7 +89,6 @@ div.onmouseover = function() {
   move2.style.padding = "1.8%";
   document.getElementById("move").innerHTML = "view";
 }
-
 
 div.onmouseleave = function() {
   const move2 = document.getElementById("move");
@@ -137,8 +125,6 @@ divPUB.onmouseleave = function() {
   document.getElementById("move").innerHTML = "";
 }
 
-
-
 var div2 = document.getElementById('view_scroll');
 div2.onmouseover = function() {
   const move2 = document.getElementById("move");
@@ -154,10 +140,6 @@ div2.onmouseleave = function() {
   document.getElementById("move").innerHTML = "";
 }
 
-
-
-
-
 var div3 = document.getElementById('button_back');
 div3.onmouseover = function() {
   const move2 = document.getElementById("move");
@@ -166,21 +148,17 @@ div3.onmouseover = function() {
   document.getElementById("move").innerHTML = "Back to Top";
 }
 
-
 div3.onmouseleave = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "0.5%";
   document.getElementById("move").innerHTML = "";
 }
 
-
-
 var div4 = document.getElementById('link_buttons');
 div4.onmouseover = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "0%";
 }
-
 
 div4.onmouseleave = function() {
   const move2 = document.getElementById("move");

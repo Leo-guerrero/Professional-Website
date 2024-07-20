@@ -8,45 +8,6 @@
     src: url(Barlow-ExtraLight.ttf);
 }
 
-@keyframes slideleft{
-    from{
-        transform: translateX(-500px);
-    }
-    to{
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideleft_scroll{
-    
-    to{
-        transform: translate(calc(-50% - 0.5rem));
-    }
-
-    from{
-        filter: brightness(0%);
-    }
-    to{
-        filter: brightness(120%);
-    }
-}
-
-@keyframes slideup2{
-    from{
-        transform: translateY(300px);
-    }
-    to{
-        transform: translateY(0);
-    }
-
-    from{
-        filter: brightness(0%);
-    }
-    to{
-        filter: brightness(120%);
-    }
-
-}
 
 @keyframes slidedown{
     from{
@@ -81,12 +42,6 @@
         cursor: pointer;
     }
 
-    #blur_back{
-        
-        border-top-left-radius: 10px !important;
-        border-top-right-radius: 10px !important;
-    }
-
     #myname{
         font-size: 15vw !important;
         
@@ -118,8 +73,6 @@
     .title_head{
         font-size: 12vw !important;
     }
-
-   
 
     .holder{
         width: 90% !important;
@@ -187,16 +140,8 @@
         border-bottom-left-radius: 20px;
         border-top: none !important;
     }
-
-
-
 }
 
-#mode{
-    position: absolute;
-    margin-left: 90%;
-    margin-top: 7%;
-}
 
 .background_test {
     background-image: url('images/front_page.png');
@@ -266,7 +211,7 @@
     display: block;
 }
 
-.dropdown-content a:hover {background-color: rgba(255, 255, 255, 0.5);}
+.dropdown-content a:hover {background-color: rgba(189, 236, 255, 0.756);}
 
 .dropdown:hover .dropdown-content {display: block;}
 
@@ -492,22 +437,6 @@ main:focus{
     -webkit-backdrop-filter: blur(2px);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-}
-
-#black{
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    border-bottom: solid;
-    border-bottom-width: 1px;
-    border-color: white;
-    border-radius: 50px;
-}
-
-.scrollslide{
-
-    animation-name: slideup;
-    animation-timeline: view();
-    animation-duration: 1.8s;
 }
 
 .title_head{
@@ -903,4 +832,11 @@ main:focus{
         border-right: none;
     }
 
+}
+
+canvas{
+    position: fixed;
+    z-index: -5;
+    left: 0;
+    top: 0;
 }
