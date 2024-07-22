@@ -8,6 +8,45 @@
     src: url(Barlow-ExtraLight.ttf);
 }
 
+@keyframes slideleft{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideleft_scroll{
+    
+    to{
+        transform: translate(calc(-50% - 0.5rem));
+    }
+
+    from{
+        filter: brightness(0%);
+    }
+    to{
+        filter: brightness(120%);
+    }
+}
+
+@keyframes slideup2{
+    from{
+        transform: translateY(300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+
+    from{
+        filter: brightness(0%);
+    }
+    to{
+        filter: brightness(120%);
+    }
+
+}
 
 @keyframes slidedown{
     from{
@@ -38,10 +77,6 @@
         display: none;
     }
 
-    .projects_container:hover{
-        cursor: pointer;
-    }
-
     #myname{
         font-size: 15vw !important;
         
@@ -58,6 +93,7 @@
     #button_back:hover{
         cursor: pointer;
     }
+
 
 }
 
@@ -92,56 +128,17 @@
         font-size: 4vw !important;
     }
 
-    .projects_container{
-        flex-direction: column;
+    .project_text{
+        font-size: 4vw !important;
     }
 
-    .holder3{
-        width: 95% !important;
-        font-size: 4.2vw !important;
-        height: 32vw !important;
-    }
-
-    #github_pro{
-
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0px !important;
-        border-bottom: none !important;
-    }
-
-    #github_text{
-        border-top-right-radius: 0px !important;
-        border-bottom-left-radius: 20px;
-        border-top: none !important;
-    }
-
-    #permafrost{
-        border-top-right-radius: 0px !important;
-        border-bottom-left-radius: 20px;
-        border-top: none !important;
-    }
-
-    #permafrost_text{
-        border-top-right-radius: 20px;
-        border-bottom-left-radius:0px !important;
-        border-bottom: none !important;
-    }
-
-    #pub{
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0px !important;
-        border-bottom: none !important;
-
-    }
-
-    #pub_text{
-        
-        border-top-right-radius: 0px !important;
-        border-bottom-left-radius: 20px;
-        border-top: none !important;
-    }
 }
 
+#mode{
+    position: absolute;
+    margin-left: 90%;
+    margin-top: 7%;
+}
 
 .background_test {
     background-image: url('images/front_page.png');
@@ -439,6 +436,22 @@ main:focus{
     border-top-right-radius: 30px;
 }
 
+#black{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-color: white;
+    border-radius: 50px;
+}
+
+.scrollslide{
+
+    animation-name: slideup;
+    animation-timeline: view();
+    animation-duration: 1.8s;
+}
+
 .title_head{
     font-size: 8vw;
     text-align: center;
@@ -558,103 +571,6 @@ main:focus{
     border-width: 2px;
     border-color: rgba(189, 236, 255, 0.756);
 }
-
-
-.projects_container{
-    display: flex;
-    justify-content:space-evenly;
-    padding: 20px;
-    margin-top: 2%;
-}
-
-#github_pro{
-
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-image: url(images/github.jpg);
-    background-size: cover;
-    
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
-    border: solid;
-    border-width: 2px;
-    border-color: rgba(189, 236, 255, 0.756);
-}
-
-#github_text{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    
-    border: solid;
-    border-width: 2px;
-    border-color: rgba(189, 236, 255, 0.756);
-
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
-}
-
-#permafrost_text{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-
-    border: solid;
-    border-width: 2px;
-    border-color: rgba(189, 236, 255, 0.756);
-
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
-    
-}
-
-#permafrost{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-image: url(images/permafrost.PNG);
-    background-size: cover;
-
-    border: solid;
-    border-width: 2px;
-    border-color: rgba(189, 236, 255, 0.756);
-
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
-
-}
-
-#pub_text{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-    border: solid;
-    border-width: 2px;
-    border-color: rgba(189, 236, 255, 0.756);
-
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
-}
-
-#pub{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-size: cover;
-    background-image: url(images/pub.jpg);
-
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
-    border: solid;
-    border-width: 2px;
-    border-color: rgba(189, 236, 255, 0.756);
-}
-
-.holder3{
-    width: 50%;
-    background-color: rgba(17, 17, 17, 0.5);
-    padding: 10px;
-    
-    font-size: 2vw;
-    height: 20vw;
-    transition-duration: 0.4s;
-
-}
-
-.holder3:hover{
-    background-color: rgba(189, 236, 255, 0.756);
-}
-
 
 
 #back_up{
@@ -783,12 +699,12 @@ main:focus{
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 9999px;
-    font-size: 50%;
-    
+    background-color: rgb(0, 0, 0);
+    line-height: 50px;
 }
 
 @media (min-width: 769px){
-    .projects_container:hover{
+    .content:hover{
         cursor:none;
     }
 
@@ -808,31 +724,73 @@ main:focus{
         display: none;
     }
 
-    #github_pro{
-        border-right: none;
-    }
+}
 
-    #github_text{
-        border-left: none;
-    }
+.column {
+    float: left;
+    width: 33%;
+}
 
-    #permafrost{
-        border-left: none;
-    }
 
-    #permafrost_text{
-        border-right: none;
-    }
-
-    #pub_text{
-        border-left: none;
-    }
-
-    #pub{
-        border-right: none;
-    }
+.row,
+.row > .column {
+  padding: 20px;
+  
 
 }
+
+.row {
+    margin: 8px -16px;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.content {
+    padding:10px;
+    
+    border-radius: 20px;
+    border: solid;
+    border-color: rgba(189, 236, 255, 0.756);
+    border-width: 2px;
+    transition-duration: 0.6s;
+
+    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
+  }
+
+.content:hover{
+    background-color: rgba(189, 236, 255, 0.756);
+}
+
+.img_prof{
+    border-radius: 20px;
+}
+
+h2{
+    font-family: small_letters;
+    color: white;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .column {
+      width: 101%;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
 
 canvas{
     position: fixed;
