@@ -94,7 +94,6 @@
         cursor: pointer;
     }
 
-
 }
 
 @media (min-width: 769px){
@@ -701,6 +700,7 @@ main:focus{
     border-radius: 9999px;
     background-color: rgb(0, 0, 0);
     
+    
 }
 
 @media (min-width: 769px){
@@ -729,6 +729,7 @@ main:focus{
 .column {
     float: left;
     width: 33%;
+    
 }
 
 
@@ -759,6 +760,7 @@ main:focus{
     transition-duration: 0.6s;
 
     box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
+    
   }
 
 .content:hover{
