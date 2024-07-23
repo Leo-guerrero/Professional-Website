@@ -726,6 +726,8 @@ main:focus{
 
 }
 
+
+
 .column {
     float: left;
     width: 33%;
@@ -764,9 +766,11 @@ main:focus{
   }
 
 .content:hover{
-    background-color: rgba(189, 236, 255, 0.756);
     
+    background-color: rgba(189, 236, 255, 0.756);
 }
+
+
 
 .img_prof{
     border-radius: 20px;
@@ -779,14 +783,8 @@ h2{
     font-weight: normal;
 }
 
-@media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
-    }
-  }
-  
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     .column {
       width: 101%;
     }
@@ -801,4 +799,7 @@ canvas{
     z-index: -5;
     left: 0;
     top: 0;
+
+    
+    height: 100vh;
 }

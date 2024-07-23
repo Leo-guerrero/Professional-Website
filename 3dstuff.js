@@ -57,11 +57,37 @@ function animate() {
 
 animate();
 
-window.addEventListener('resize', onWindowResize, false);
-onWindowResize = () => {
-	camera.aspect = window.innerWidth / window.innerHeight;
-	camera.updateProjectionMatrix();
-	renderer.setSize(window.innerWidth, window.innerHeight);
-};
+//----------------------------------------
+
+const canvas = document.querySelector('#bg');
+
+function getWidth() {
+	return parseInt(window.getComputedStyle(canvas).width);
+  }
+  
+  function getHeight() {
+	return parseInt(window.getComputedStyle(canvas).height);
+  }
+
+/*
+addEventListener("resize",() => {
+    camera.aspect = getWidth() / getHeight();
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(window.innerWidth, window.innerHeight);
+},false);
+*/
+
+window.addEventListener("resize", () => {
+	camera.aspect = getWidth() / getHeight();
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(window.innerWidth, window.innerHeight);
+})
 
 
+const loop = () => {
+	renderer.render(scene, camera)
+	window.requestAnimationFrame(loop)
+}
+loop();
