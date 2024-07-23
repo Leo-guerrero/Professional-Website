@@ -11,6 +11,8 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
+
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if(entry.isIntersecting){
@@ -50,8 +52,8 @@ document.body.onpointermove = event => {
 
 }
 
-
-const mediaQuery = window.matchMedia('(min-width: 840px)')
+/*
+const mediaQuery = window.matchMedia('(min-width: 768px)')
 if (mediaQuery.matches) {
   document.addEventListener("mousemove", parallax);
   function parallax(e){
@@ -66,6 +68,8 @@ if (mediaQuery.matches) {
   }
   
 }
+*/
+
 
 
 
@@ -89,6 +93,7 @@ div.onmouseover = function() {
   move2.style.padding = "1.8%";
   document.getElementById("move").innerHTML = "view";
 }
+
 
 div.onmouseleave = function() {
   const move2 = document.getElementById("move");
@@ -125,11 +130,13 @@ divPUB.onmouseleave = function() {
   document.getElementById("move").innerHTML = "";
 }
 
+
+
 var div2 = document.getElementById('view_scroll');
 div2.onmouseover = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "1.8%";
-  move2.style.color = "black";
+  
   document.getElementById("move").innerHTML = "Lets go!";
 }
 
@@ -140,13 +147,18 @@ div2.onmouseleave = function() {
   document.getElementById("move").innerHTML = "";
 }
 
-var div3 = document.getElementById('button_back');
+
+
+
+
+var div3 = document.getElementById('back_up');
 div3.onmouseover = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "1.8%";
-  move2.style.color = "black";
+  
   document.getElementById("move").innerHTML = "Back to Top";
 }
+
 
 div3.onmouseleave = function() {
   const move2 = document.getElementById("move");
@@ -154,15 +166,20 @@ div3.onmouseleave = function() {
   document.getElementById("move").innerHTML = "";
 }
 
+
+
 var div4 = document.getElementById('link_buttons');
 div4.onmouseover = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "0%";
+  
 }
+
 
 div4.onmouseleave = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "0.5%";
+ 
 }
 
 

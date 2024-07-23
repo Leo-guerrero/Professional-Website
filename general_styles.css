@@ -140,13 +140,13 @@
 }
 
 .background_test {
-    background-image: url('images/front_page.png');
     height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
+    filter: brightness(30%);
     background-size: cover;
     background-position: center;
 }
@@ -574,24 +574,15 @@ main:focus{
 
 #back_up{
     color: white;
-}
 
-#button_back{
-    text-decoration: none;
-    background-color: rgb(31, 31, 31);
-    border: none;
-    padding: 2%;
-    border-radius: 50px;
-    transition-duration: 0.6s;
+    background-color: none;
     position: absolute;
     
-    left: 45.5%;
-    transform: translate(50%);
+    
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 
-#button_back:hover{
-    background-color: rgb(75, 75, 75);
-}
 
 .hidden{
     opacity: 0;
@@ -667,10 +658,13 @@ main:focus{
 
 
 #move{
-    background-color: rgba(255,255,255, 0);
-    backdrop-filter: invert(1);
+    
     transition-duration: 0.6s;
     z-index: 20;
+
+    border: solid;
+    border-color: white;
+    border-width: 1px;
     
     aspect-ratio: 1;
     left: 50%;
@@ -712,7 +706,7 @@ main:focus{
         cursor:none;
     }
 
-    #button_back:hover{
+    #back_up:hover{
         cursor: none;
     }
 
@@ -803,3 +797,5 @@ canvas{
     
     height: 100vh;
 }
+
+
