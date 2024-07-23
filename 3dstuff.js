@@ -59,35 +59,34 @@ animate();
 
 //----------------------------------------
 
-const canvas = document.querySelector('#bg');
 
-function getWidth() {
-	return parseInt(window.getComputedStyle(canvas).width);
-  }
-  
-  function getHeight() {
-	return parseInt(window.getComputedStyle(canvas).height);
-  }
-
-/*
-addEventListener("resize",() => {
-    camera.aspect = getWidth() / getHeight();
-    camera.updateProjectionMatrix();
-
-    renderer.setSize(window.innerWidth, window.innerHeight);
-},false);
-*/
-
-window.addEventListener("resize", () => {
-	camera.aspect = getWidth() / getHeight();
-    camera.updateProjectionMatrix();
-
-    renderer.setSize(window.innerWidth, window.innerHeight);
-})
+window.addEventListener( 'resize', onWindowResize );
 
 
-const loop = () => {
-	renderer.render(scene, camera)
-	window.requestAnimationFrame(loop)
+function onWindowResize() {
+
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
+
+	renderer.setSize( window.innerWidth, window.innerHeight );
+
 }
-loop();
+
+
+
+
+const vertices = [];
+
+for ( let i = 0; i < 10000; i ++ ) {
+	const x = THREE.MathUtils.randFloatSpread( 2000 );
+	const y = THREE.MathUtils.randFloatSpread( 2000 );
+	const z = THREE.MathUtils.randFloatSpread( 2000 );
+
+	vertices.push( x, y, z );
+}
+
+const geometry4 = new THREE.IcosahedronGeometry( 18, 1);  
+geometry4.setAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
+const material4 = new THREE.PointsMaterial( { color: 0x888888 } );
+const points = new THREE.Points( geometry4, material4 );
+scene.add( points );
