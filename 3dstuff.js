@@ -74,6 +74,7 @@ function animate() {
 	points.rotation.x += 0.0001;
 	points.rotation.y += 0.001;
 	points.rotation.z += 0.001;
+
 	renderer.render( scene, camera );
 }
 
@@ -92,6 +93,23 @@ function onWindowResize() {
 
 	renderer.setSize( window.innerWidth, window.innerHeight );
 
+}
+
+
+addEventListener('scroll', scrollAnimate);
+
+function scrollAnimate(){
+	sphere.rotation.x += 0.01;
+	sphere.rotation.y += 0.01;
+	sphere.rotation.z += 0.01;
+
+	sphere2.rotation.x += 0.01;
+	sphere2.rotation.y += 0.01;
+	sphere2.rotation.z += 0.01;
+
+	sphere3.rotation.x += 0.01;
+	sphere3.rotation.y += 0.01;
+	sphere3.rotation.z += 0.01;
 }
 
 
