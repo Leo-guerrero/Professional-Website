@@ -77,16 +77,18 @@
         display: none;
     }
 
+    
     #myname{
         font-size: 15vw !important;
-        
     }
+
     #under_text{
-        font-size: 3.2vw !important;
-        margin-top: 24% !important;
+        margin-top: 35% !important;
+        font-size: 4vw !important;
     }
+    
     #view_scroll{
-        margin-top: 40% !important;
+        margin-top: 50% !important;
         cursor: pointer;
     }
 
@@ -356,7 +358,7 @@ main:focus{
 }
 
 #myname{
-    font-size: 5vw;
+    font-size: 7rem;
     position: absolute;
     color: white;
     z-index: 1;
@@ -366,6 +368,7 @@ main:focus{
     white-space: nowrap;
 
 
+    margin-top: 70px;
     top: 30%; 
     left: 50%; 
     transform: translate(-50%, -50%);
@@ -376,10 +379,11 @@ main:focus{
     position: absolute;
     z-index: 1;
     text-align: center;
-    font-size: 0.8vw;
+    font-size: 1.2rem;
     color: #ffffff;
 
-    margin-top: 8%;
+    white-space: nowrap;
+    margin-top: 160px;
     top: 30%; 
     left: 50%; 
     transform: translate(-50%, -50%);
@@ -389,7 +393,7 @@ main:focus{
     z-index: 1;
     position: absolute;
 
-    margin-top: 13%;
+    margin-top: 240px;
     top: 30%; 
     left: 50%; 
     transform: translate(-50%, -50%);
