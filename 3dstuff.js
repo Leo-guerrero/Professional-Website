@@ -39,6 +39,24 @@ sphere3.position.y = 5;
 renderer.shadowMap.enabled = false;
 
 
+
+const vertices = [];
+
+for ( let i = 0; i < 10000; i ++ ) {
+	const x = THREE.MathUtils.randFloatSpread( 2000 );
+	const y = THREE.MathUtils.randFloatSpread( 2000 );
+	const z = THREE.MathUtils.randFloatSpread( 2000 );
+
+	vertices.push( x, y, z );
+}
+
+const geometry4 = new THREE.IcosahedronGeometry( 9, 6);  
+geometry4.setAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
+const material4 = new THREE.PointsMaterial( { color: 0x888888 } );
+const points = new THREE.Points( geometry4, material4 );
+scene.add( points );
+
+
 function animate() {
 	requestAnimationFrame( animate );
 	sphere.rotation.x += 0.001;
@@ -52,6 +70,10 @@ function animate() {
 	sphere3.rotation.x += 0.008;
 	sphere3.rotation.y += 0.001;
 	sphere3.rotation.z += 0.005;
+
+	points.rotation.x += 0.0001;
+	points.rotation.y += 0.001;
+	points.rotation.z += 0.001;
 	renderer.render( scene, camera );
 }
 
@@ -75,18 +97,3 @@ function onWindowResize() {
 
 
 
-const vertices = [];
-
-for ( let i = 0; i < 10000; i ++ ) {
-	const x = THREE.MathUtils.randFloatSpread( 2000 );
-	const y = THREE.MathUtils.randFloatSpread( 2000 );
-	const z = THREE.MathUtils.randFloatSpread( 2000 );
-
-	vertices.push( x, y, z );
-}
-
-const geometry4 = new THREE.IcosahedronGeometry( 18, 1);  
-geometry4.setAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
-const material4 = new THREE.PointsMaterial( { color: 0x888888 } );
-const points = new THREE.Points( geometry4, material4 );
-scene.add( points );
