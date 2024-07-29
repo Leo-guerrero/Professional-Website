@@ -13,27 +13,33 @@ camera.position.setZ(30);
 
 renderer.render( scene, camera);
 
-const geometry = new THREE.IcosahedronGeometry( 18, 1);  
+const shpere_size = 25;
+
+const geometry = new THREE.IcosahedronGeometry( shpere_size, 1);  
 const material = new THREE.MeshBasicMaterial( { color: 0xffffff, wireframe: true } ); 
 const sphere = new THREE.Mesh( geometry, material ); scene.add( sphere );
 
+sphere.position.x = 22;
+sphere.position.y = -10;
+
 //---------------------
-const geometry2 = new THREE.OctahedronGeometry( 14, 0 );
+
+const geometry2 = new THREE.OctahedronGeometry( 16, 0 );
 const material2 = new THREE.MeshBasicMaterial( { color: 0xffffff, wireframe: true } ); 
 const sphere2 = new THREE.Mesh( geometry2, material2 ); scene.add( sphere2 );
 
-sphere2.position.x = -72;
-sphere2.position.z = -40;
-sphere2.position.y = -20;
+sphere2.position.x = -18;
+sphere2.position.z = -48;
+sphere2.position.y = 30;
 
 //------------------------
 const geometry3 = new THREE.TetrahedronGeometry( 5, 0 );
 const material3 = new THREE.MeshBasicMaterial( { color: 0xffffff, wireframe: true } ); 
 const sphere3 = new THREE.Mesh( geometry3, material3 ); scene.add( sphere3 );
 
-sphere3.position.x = 22;
+sphere3.position.x = -22;
 sphere3.position.z = 10;
-sphere3.position.y = 5;
+sphere3.position.y = -8;
 //---------------------
 
 renderer.shadowMap.enabled = false;
@@ -52,8 +58,8 @@ for ( let i = 0; i < 10000; i ++ ) {
 
 const geometry4 = new THREE.IcosahedronGeometry( 9, 6);  
 geometry4.setAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
-const material4 = new THREE.PointsMaterial( { color: 0x888888 } );
-const points = new THREE.Points( geometry4, material4 );
+const material4 = new THREE.PointsMaterial( { color: 0x93D3FF } );
+const points = new THREE.Points( geometry4, material4 ); 
 scene.add( points );
 
 
@@ -112,6 +118,15 @@ function scrollAnimate(){
 	sphere3.rotation.z += 0.01;
 }
 
+
+
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+if (mediaQuery.matches) {
+	sphere2.position.x = -60;
+	sphere2.position.z = -48;
+	sphere2.position.y = 30;
+
+}
 
 
 
