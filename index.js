@@ -131,26 +131,6 @@ divPUB.onmouseleave = function() {
 }
 
 
-
-var div2 = document.getElementById('view_scroll');
-div2.onmouseover = function() {
-  const move2 = document.getElementById("move");
-  move2.style.padding = "1.8%";
-  
-  document.getElementById("move").innerHTML = "Lets go!";
-}
-
-
-div2.onmouseleave = function() {
-  const move2 = document.getElementById("move");
-  move2.style.padding = "0.5%";
-  document.getElementById("move").innerHTML = "";
-}
-
-
-
-
-
 var div3 = document.getElementById('back_up');
 div3.onmouseover = function() {
   const move2 = document.getElementById("move");

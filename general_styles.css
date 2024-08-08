@@ -4,6 +4,11 @@
   }
 
 @font-face {
+    font-family: heading;
+    src: url(FacileSans.otf);
+}
+
+@font-face {
     font-family: small_letters;
     src: url(Barlow-ExtraLight.ttf);
 }
@@ -79,7 +84,7 @@
 
     
     #myname{
-        font-size: 15vw !important;
+        font-size: 4.5vw !important;
     }
 
     #under_text{
@@ -358,58 +363,25 @@ main:focus{
 }
 
 #myname{
-    font-size: 7rem;
-    position: absolute;
     color: white;
-    z-index: 1;
-    font-family: small_letters;
-    font-weight: normal;
-
-    white-space: nowrap;
-
-
-    margin-top: 70px;
-    top: 30%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-
-}
-
-#under_text{
-    position: absolute;
-    z-index: 1;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #ffffff;
-
-    white-space: nowrap;
-    margin-top: 160px;
-    top: 30%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-}
-
-#view_scroll{
-    z-index: 1;
+    font-size: 3vw;
+    font-family: heading;
+    line-height: 50%;
     position: absolute;
 
-    margin-top: 240px;
-    top: 30%; 
+    
+    top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-
-    font-family: small_letters;
-    color: white;
-    text-decoration: none;
-    border: none;
-
-    transition-duration: 0.4s;
-    
-    scale: 1;
-    
-    padding: 1% ;
-    background-color: rgba(0,0,0,0);
+    white-space: nowrap;
 }
+
+#test{
+    color: rgb(74, 206, 218);
+}
+
+
+
 
 
 
