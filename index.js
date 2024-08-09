@@ -4,12 +4,23 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("buttons_top").style.top = "0";
     document.getElementById("link_buttons").style.top = "0";
+    
   } else {
     document.getElementById("buttons_top").style.top = "-180px";
     document.getElementById("link_buttons").style.top = "-180px";
   }
+
+  if(window.scrollY <= 200){
+    document.getElementById("bg").style.filter = 'blur(0px)';
+   }
+   else{
+    document.getElementById("bg").style.filter = 'blur(1px)';
+   }
+
+  console.log(window.scrollY);
   prevScrollpos = currentScrollPos;
 }
+
 
 
 
