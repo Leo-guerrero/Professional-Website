@@ -12,9 +12,12 @@ window.onscroll = function() {
 
   if(window.scrollY <= 200){
     document.getElementById("bg").style.filter = 'blur(0px)';
+    document.getElementById("buttons_top").style.backdropFilter = 'blur(0px)';
+    document.getElementById("buttons_top").style.backgroundColor = 'rgba(0, 0, 0, 0)';
    }
    else{
     document.getElementById("bg").style.filter = 'blur(1px)';
+    document.getElementById("buttons_top").style.backgroundColor = 'rgba(0, 0, 0, 1)';
    }
 
   console.log(window.scrollY);

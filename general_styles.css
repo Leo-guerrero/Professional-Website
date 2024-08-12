@@ -300,12 +300,7 @@ p{
     font-family: small_letters;
 }
 
-#buttons_top{
-    
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    
-}
+
 
 .header_buttons{
     width: 100%;
@@ -325,6 +320,7 @@ p{
     background: none;
     color: white;
     text-decoration: none;
+    
     
     font-size: medium;
     font-family: small_letters;
@@ -378,7 +374,7 @@ main:focus{
 }
 
 #test{
-    color: rgb(74, 206, 218);
+    color: rgb(136, 221, 255);
 }
 
 
