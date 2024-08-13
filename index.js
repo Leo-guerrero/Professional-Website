@@ -87,6 +87,42 @@ if (mediaQuery.matches) {
 
 
 
+const slider = document.querySelector('.media-SROLLER');
+let isActive = false;
+let startX;
+let scrollLeft;
+
+
+slider.addEventListener('mousedown', (e) => {
+  isActive = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  console.log(startX);
+  scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseleave', () => {
+  isActive = false;
+  slider.classList.remove('active');
+});
+
+slider.addEventListener('mouseup', () => {
+  isActive = false;
+  slider.classList.remove('active');
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if(!isActive) return;
+
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 2;
+  slider.scrollLeft = scrollLeft - walk;
+});
+
+
+
+//-----------------------------------------------------------------------
 var divmypic = document.getElementById('myname');
 divmypic.onmouseover = function() {
   const move2 = document.getElementById("move");
@@ -101,40 +137,13 @@ divmypic.onmouseleave = function() {
   move2.style.backgroundImage = "url('')";
 }
 
-var div = document.getElementById('git_container');
-div.onmouseover = function() {
-  const move2 = document.getElementById("move");
-  move2.style.padding = "1.8%";
-  document.getElementById("move").innerHTML = "view";
-}
 
 
-div.onmouseleave = function() {
-  const move2 = document.getElementById("move");
-  move2.style.padding = "0.5%";
-  document.getElementById("move").innerHTML = "";
-}
-
-var divperma = document.getElementById('permafrost_container');
-divperma.onmouseover = function() {
-  const move2 = document.getElementById("move");
-  move2.style.padding = "1.8%";
-  document.getElementById("move").innerHTML = "view";
-}
-
-
-divperma.onmouseleave = function() {
-  const move2 = document.getElementById("move");
-  move2.style.padding = "0.5%";
-  document.getElementById("move").innerHTML = "";
-}
-
-
-var divPUB = document.getElementById('BPUB_container');
+var divPUB = document.getElementById('Projects_NEW');
 divPUB.onmouseover = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "1.8%";
-  document.getElementById("move").innerHTML = "view";
+  document.getElementById("move").innerHTML = "Click & Drag";
 }
 
 

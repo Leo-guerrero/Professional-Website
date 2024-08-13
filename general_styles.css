@@ -669,7 +669,7 @@ main:focus{
     border-radius: 9999px;
     background-color: rgb(0, 0, 0);
     
-    
+    line-height: 190%;
 }
 
 @media (min-width: 769px){
@@ -693,50 +693,14 @@ main:focus{
         display: none;
     }
 
-}
+    .media-SROLLER:hover{
+        cursor: none;
+    }
 
+    .learn_more{
+        cursor: none;
+    }
 
-
-.column {
-    float: left;
-    width: 33%;
-    
-}
-
-
-.row,
-.row > .column {
-  padding: 20px;
-  
-
-}
-
-.row {
-    margin: 8px -16px;
-  }
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.content {
-    padding:10px;
-    
-    border-radius: 20px;
-    border: solid;
-    border-color: rgba(189, 236, 255, 0.756);
-    border-width: 2px;
-    transition-duration: 0.6s;
-
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
-    
-  }
-
-.content:hover{
-    
-    background-color: rgba(189, 236, 255, 0.756);
 }
 
 
@@ -753,15 +717,75 @@ h2{
 }
 
 
-  @media screen and (max-width: 900px) {
-    .column {
-      width: 101%;
-    }
+.media-SROLLER{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 47%;
+    overscroll-behavior-inline: contain;
+
+    
+    overflow-x: scroll;
+    
+}
+
+.media-element{
+    padding: 10px;
+    background-size: cover;
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+
+    
+}
+
+.media-SROLLER.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
   }
 
-  * {
-    box-sizing: border-box;
+.media-SROLLER::-webkit-scrollbar{
+    display: none;
+}
+
+.media-SROLLER {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
+
+.media-element > img{
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .media-SROLLER{
+        grid-auto-columns: 100%;
+    }
+}
+
+
+.learn_more{
+    text-decoration: none;
+    border: none;
+    background-color: rgba(185, 253, 255, 0);
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+    padding: 10px;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.6s;
+}
+
+.media-element:hover{
+    .learn_more{
+        background-color: rgb(189, 236, 255);
+        border-color: rgb(189, 236, 255);
+        box-shadow: rgba(176, 214, 255, 0.4) 0 0 20px 8px;
+        color: black;
+    }
+}
+
 
 canvas{
     position: fixed;
