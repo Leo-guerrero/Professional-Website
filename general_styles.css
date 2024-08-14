@@ -536,14 +536,14 @@ main:focus{
 }
 
 .holder2{
-    background-color: rgba(17, 17, 17, 0.5);
+    
     padding: 10px;
-    border-radius: 20px;
     width: 40%;
     box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
     border: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color: rgba(189, 236, 255, 0.756);
+    border-radius: 20px;
 }
 
 
@@ -723,7 +723,7 @@ h2{
     grid-auto-columns: 47%;
     overscroll-behavior-inline: contain;
 
-    
+    gap: 40px;
     overflow-x: scroll;
     
 }
@@ -735,7 +735,9 @@ h2{
     border-width: 1px;
     border-color: white;
 
+    border-radius: 20px;
     
+    border-color: rgba(189, 236, 255, 0.756);
 }
 
 .media-SROLLER.active {
@@ -754,7 +756,7 @@ h2{
 
 .media-element > img{
     width: 100%;
-    
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 900px) {
