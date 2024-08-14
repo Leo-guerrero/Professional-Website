@@ -537,12 +537,13 @@ main:focus{
 
 .holder2{
     
+    background-color: rgb(16, 16, 16);
     padding: 10px;
     width: 40%;
-    box-shadow: rgba(176, 214, 255, 0.6) 0 0 20px 8px;
+    
     border: solid;
     border-width: 1px;
-    border-color: rgba(189, 236, 255, 0.756);
+    border-color: rgba(58, 58, 58, 0.756);
     border-radius: 20px;
 }
 
@@ -660,14 +661,13 @@ main:focus{
 }
 
 .round_radious{
-    box-shadow: rgba(176, 214, 255, 0.4) 0 0 5px 2px;
-    border-color: rgba(189, 236, 255, 0.756);
+    border-color: rgba(87, 87, 87, 0.756);
     border-width: 2px;
     border-style: solid;
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 9999px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(40, 40, 40);
     
     line-height: 190%;
 }
@@ -737,7 +737,8 @@ h2{
 
     border-radius: 20px;
     
-    border-color: rgba(189, 236, 255, 0.756);
+    border-color: rgba(58, 58, 58, 0.756);
+    background-color: rgb(16, 16, 16);
 }
 
 .media-SROLLER.active {
@@ -757,6 +758,10 @@ h2{
 .media-element > img{
     width: 100%;
     border-radius: 20px;
+
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(58, 58, 58, 0.756);
 }
 
 @media screen and (max-width: 900px) {
@@ -772,11 +777,12 @@ h2{
     background-color: rgba(185, 253, 255, 0);
     border: solid;
     border-width: 1px;
-    border-color: white;
+    border-color: rgb(97, 97, 97);
     padding: 10px;
     font-size: large;
     color: rgb(255, 255, 255);
     transition-duration: 0.6s;
+    font-family: small_letters;
 }
 
 .media-element:hover{
