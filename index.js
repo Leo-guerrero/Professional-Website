@@ -12,12 +12,9 @@ window.onscroll = function() {
 
   if(window.scrollY <= 200){
     document.getElementById("bg").style.filter = 'blur(0px)';
-    document.getElementById("buttons_top").style.backdropFilter = 'blur(0px)';
-    document.getElementById("buttons_top").style.backgroundColor = 'rgba(0, 0, 0, 0)';
    }
    else{
     document.getElementById("bg").style.filter = 'blur(1px)';
-    document.getElementById("buttons_top").style.backgroundColor = 'rgba(0, 0, 0, 1)';
    }
 
   console.log(window.scrollY);
@@ -140,11 +137,16 @@ divmypic.onmouseleave = function() {
 
 
 var divPUB = document.getElementById('Projects_NEW');
+var learnMore = document.getElementById('learner');
 divPUB.onmouseover = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "1.8%";
   document.getElementById("move").innerHTML = "Click & Drag";
+  
+  
 }
+
+
 
 
 divPUB.onmouseleave = function() {
@@ -152,6 +154,7 @@ divPUB.onmouseleave = function() {
   move2.style.padding = "0.5%";
   document.getElementById("move").innerHTML = "";
 }
+
 
 
 var div3 = document.getElementById('back_up');
@@ -175,14 +178,14 @@ var div4 = document.getElementById('link_buttons');
 div4.onmouseover = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "0%";
-  
+  move2.style.borderWidth = "0px";
 }
 
 
 div4.onmouseleave = function() {
   const move2 = document.getElementById("move");
   move2.style.padding = "0.5%";
- 
+  move2.style.borderWidth = "1px";
 }
 
 

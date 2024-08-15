@@ -294,61 +294,60 @@ p{
 
 
 .header_buttons{
-    width: 100%;
     
-    text-align: center;
+    
+    left: 50%; 
+    transform: translate(-50%, 12%);
+
+    
+    border-radius: 20px;
+    background-color: rgb(15, 15, 15);
     z-index: 2;
     position: absolute;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
     position: fixed;
     transition: top 0.3s;
+    word-spacing: 30px;
+    white-space: nowrap;
 }
 
 .main{
-    margin-right: 50px;
+    
     background: none;
     color: white;
     text-decoration: none;
     
-    
+    transition-duration: 0.6s;
     font-size: medium;
     font-family: small_letters;
     border: none;
     display: inline-block;
     position: relative;
     overflow-y: hidden;
+
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(71, 71, 71);
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.main:after{
-    content: '';
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
 
-.main:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-
-}
 
 .main:hover{
     cursor:pointer;
+
+    background-color: rgb(189, 236, 255);
+    border-color: rgb(189, 236, 255);
+    box-shadow: rgba(176, 214, 255, 0.4) 0 0 12px 6px;
+    color: black;
 }
 
-main:hover,
-main:focus{
-    background-size: 0 0.1em, 100% 0.1em;
-}
+
 
 #myname{
     color: white;
@@ -776,7 +775,6 @@ h2{
     color: rgb(255, 255, 255);
     transition-duration: 0.6s;
     font-family: small_letters;
-
     
 }
 
