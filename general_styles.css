@@ -82,9 +82,12 @@
         display: none;
     }
 
-    
-    #myname{
-        font-size: 4.3vw !important;
+    #name_spec{
+        font-size: 9vw;
+    }
+
+    #test{
+        font-size: 9vw;
     }
 
 
@@ -107,22 +110,42 @@
         font-size: 12vw !important;
     }
 
-    .holder{
-        width: 90% !important;
-        font-size: 6vw !important;
+
+    #holder_ID{
+        width: 90%;
         margin-bottom: 10px;
     }
 
-    #holder_my_pic{
-        width: 95% !important;
+    #intro_text{
+        font-size: 6vw;
     }
 
-    .holder2{
-        width: 90% !important;
+    
+    #holder_my_pic{
+        width: 95%;
+        
+    }
+    
+    #holder_pic{
+        width: 100%;
+    }
+
+    #holder2_ID{
+        width: 90%;
         margin-bottom: 6%;
     }
-    #langu{
-        font-size: 4vw !important;
+
+    #holder2_ID_TWO{
+        width: 90%;
+        margin-bottom: 6%;
+    }
+
+    #languID{
+        font-size: 4vw;
+    }
+
+    #languID_2{
+        font-size: 4vw;
     }
 
     .project_text{
@@ -492,17 +515,14 @@ p{
     border-radius: 20px;
 }
 
-#holder_my_pic{
-    width: 40%;
-}
-
-#holder_pic{
+.pic_mer{
     border-radius: 20px;
-    
 }
 
 
-#langu{
+
+
+.langu{
     font-size: 2vw;
     text-align: left;
     
@@ -710,15 +730,25 @@ h2{
 .media-SROLLER{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 45%;
-    overscroll-behavior-inline: contain;
+    grid-auto-columns: 39%;
 
-    gap: 40px;
+    
+    overscroll-behavior-inline: contain;
+    
+
+    gap: 2.5%;
     overflow-x: scroll;
+
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 4.3%;
+    padding-bottom: 4.3%;
     
 }
 
 .media-element{
+
+    transition-duration: 0.6s;
     padding: 10px;
     background-size: cover;
     border: solid;
@@ -730,7 +760,9 @@ h2{
     border-color: rgba(58, 58, 58, 0.756);
     background-color: rgb(16, 16, 16);
 
-    user-select: none
+    scale: 1;
+    user-select: none;
+    
 }
 
 .media-SROLLER.active {
@@ -762,6 +794,12 @@ h2{
     }
 }
 
+@media screen and (min-width: 900px) {
+   .media-element:hover{
+        scale: 1.1;
+   }
+}
+
 
 .learn_more{
     text-decoration: none;
@@ -783,6 +821,7 @@ h2{
 }
 
 .media-element:hover{
+
     .learn_more{
         background-color: rgb(189, 236, 255);
         border-color: rgb(189, 236, 255);
